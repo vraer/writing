@@ -1,6 +1,5 @@
 nav:
-
   - Home: index.md
   - About: about-me.md
   - Writing Samples: samples
-  - Contact: contact
+  - Contact: contact.md

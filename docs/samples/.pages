@@ -1,4 +1,9 @@
 nav:
-    - Test Procedure: environmental-test-procedure.md
-    - Docs Automation: custom-hook-for-mkdocs
-    - How-to guide: install-kali-on-apple-silicon.md
+    - index.md
+    - Test procedures: 
+        - Qualification test procedure: environmental-test-procedure.md
+    - Docs automation: 
+        - Generate markdown links using tags: custom-hook-for-mkdocs
+    - How-to guides: 
+        - Install Kali Linux on Apple Silicon: install-kali-on-apple-silicon.md
+        - Create a Custom Office Font Theme using XML: custom-office-font-theme.md

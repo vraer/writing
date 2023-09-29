@@ -1,96 +1,68 @@
-# Installing Kali Linux on Apple Silicon Macs Using UTM  
+# How to Install Kali Linux on an Apple Silicon Mac Using UTM
 
 ## Overview
 
-Learn how to install Kali Linux on an Apple Silicon Mac using UTM. UTM is a hypervisor and emulator based on QEMU that leverages hardware acceleration for enhanced performance.
+This guide shows you how to install Kali Linux on an Apple Silicon Mac by using UTM. UTM is a QEMU-based hypervisor and emulator that uses hardware acceleration for better performance.
 
-## Prerequisites
+## Before you begin
 
-Ensure you have the following before proceeding:
+Make sure you have the following:
 
-- **Hardware**: Apple Silicon Mac (M1/M2 chip)
-- **Disk Space**: At least 50GB of free space
-- **Software**: UTM app, Kali Linux ISO (ARM64 version)
+- An Apple Silicon Mac with an M1 or M2 chip
+- At least 50 GB of free disk space
+- The UTM app
+- The ARM64 version of the Kali Linux ISO image
 
-## Installation Steps
+## Installation steps
 
-### 1. Get the UTM App
+### Download software
 
-Download and install the UTM app from [here](https://mac.getutm.app/).
+1. **Download the UTM app**: Go to the [UTM official site](https://mac.getutm.app/) and download the app.
 
-### 2. Download Kali Linux ISO
+2. **Download the Kali Linux ISO**: Visit the [Kali Linux download page](https://www.kali.org/get-kali/) and download the ARM64 version.
 
-Grab the ARM64 version of Kali Linux from [Kali's official site](https://www.kali.org/get-kali/).
+### Configure the virtual machine
 
-### 3. Create a New VM in UTM
+3. **Open UTM**: Start the UTM app and select **New**.
 
-- Open the UTM app.
-- Click the **New** button.
+4. **Set up the virtual machine**: Choose **Virtualize**, and then select Linux as the operating system.
 
-### 4. Configure VM Settings
+5. **Import the Kali Linux ISO**: Add the ISO image you downloaded earlier.
 
-- Choose **Virtualize**.
-- Select Linux as the OS.
+### Install Kali Linux
 
-### 5. Import Kali Linux ISO
+6. **Configure hardware settings**: Set the memory to 4 GB, the number of CPU cores to 4, and enable OpenGL acceleration.
 
-Locate and import the Kali Linux ISO you downloaded.
+7. **Allocate disk space**: Provide at least 30 GB of disk space for the virtual machine.
 
-### 6. Hardware Configuration
+8. **Name the virtual machine**: Enter a name for your virtual machine.
 
-Configure the following hardware settings:
+9. **Save your settings**: Choose **Save** to create the virtual machine.
 
-- **Memory**: 4GB
-- **CPU Cores**: 4
-- **Graphics**: Enable OpenGL acceleration
+10. **Add a serial device**: Go to the settings for your virtual machine and add a serial device. You'll need this for the installation process.
 
-### 7. Allocate Disk Space
+11. **Start the installation**: Turn on the virtual machine and follow the on-screen prompts to:
+    - Choose a system language
+    - Set up your timezone and keyboard
+    - Create a user account
+    - Partition the virtual disk
+    - Choose a desktop environment
 
-Allocate a minimum of 30GB for virtual disk storage.
+## After the installation
 
-### 8. Name the VM
+- Turn off the virtual machine
+- Remove the serial device from your virtual machine settings
+- Eject the Kali Linux ISO image
+- Turn on the virtual machine
+- Update your software packages
 
-Give your virtual machine a name.
+## Troubleshoot issues
 
-### 9. Save VM Configuration
+- If the update command fails, run the following command:
 
-Click **Save** to finalize the VM creation.
+```bash
+echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" > /etc/apt/sources.list
+```
 
-### 10. Serial Device Setup
-
-In the VM settings, add a serial device. This is needed for the installation process.
-
-### 11. Boot VM
-
-Start the virtual machine.
-
-### 12. Kali Linux Installation
-
-Follow the on-screen instructions:
-
-- Language selection
-- Timezone and keyboard setup
-- User account creation
-- Virtual disk partitioning
-- Desktop environment choice
-
-## Post-Installation
-
-- Power off the VM.
-- Remove the serial device from VM settings.
-- Eject the Kali Linux ISO.
-- Boot the VM.
-- Update your package list.
-
-## Verification
-
-Make sure the following work:
-
-- Kali Linux boots in the VM.
-- Clipboard sharing between macOS and Kali Linux.
-
-## Troubleshooting
-
-- **Update Errors**: Run `echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" > /etc/apt/sources.list`.
-- **Avoid Distribution Upgrades**: Perform a clean install instead.
-- **VM Guest Additions**: Run `apt install qb-additions` to add guest features.
+- Instead of upgrading the distribution in the virtual machine, do a clean installation.
+- To add more features, install guest additions by running `apt install qb-additions`.

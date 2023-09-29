@@ -4,7 +4,6 @@ hide:
     - navigation
     - toc
 ---
-
 # About Me
 
 I'm Vanessa, a technical writer based in LA. I love solving complex problems and experimenting with new approaches.
