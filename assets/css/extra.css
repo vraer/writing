@@ -278,3 +278,19 @@
   border-radius: 0.2rem;
   white-space: nowrap;
 }
+
+/* New additions for image modifications */
+img {
+  border-radius: 8px; /* Slightly rounded border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 80%; /* Limit width */
+  max-height: 450px; /* Limit height */
+  margin: auto; /* Centering */
+}
+
+/* Override for dark mode */
+@media (prefers-color-scheme: dark) {
+  img {
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Subtle shadow for dark mode */
+  }
+}
