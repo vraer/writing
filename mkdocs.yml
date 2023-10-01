@@ -41,7 +41,7 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-    - toc.integrate
+    #- toc.integrate
 
 repo_url: https://github.com/vraer/writing
 repo_name: vraer/writing
