@@ -17,17 +17,23 @@ Make sure you have the following:
 
 ### Download software
 
-1. **Download the UTM app**: Go to the [UTM official site](https://mac.getutm.app/) and download the app.
+- **UTM app**: Go to the [UTM official site](https://mac.getutm.app/) and download the app.
 
-2. **Download the Kali Linux ISO**: Visit the [Kali Linux download page](https://www.kali.org/get-kali/) and download the ARM64 version.
+- **Kali Linux ISO**: Visit the [Kali Linux download page](https://www.kali.org/get-kali/) and download the ARM64 version.
 
 ### Configure the virtual machine
 
-3. **Open UTM**: Start the UTM app and select **New**.
+3. **Open UTM**: Start the UTM app and select **Create a New Virtual Machine**.
+
+    ![Create a new VM](../assets/images/install-kali-on-apple-silicon/01-create-a-new-vm.png)
 
 4. **Set up the virtual machine**: Choose **Virtualize**, and then select Linux as the operating system.
 
+    ![Virtualize](../assets/images/install-kali-on-apple-silicon/02-virtualize.png)
+
 5. **Import the Kali Linux ISO**: Add the ISO image you downloaded earlier.
+
+    ![Add downloaded ISO](../assets/images/install-kali-on-apple-silicon/03-select-iso-file.png)
 
 ### Install Kali Linux
 
