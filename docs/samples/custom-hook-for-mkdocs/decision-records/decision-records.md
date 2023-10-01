@@ -15,7 +15,7 @@ See detailed instructions and templates for [adding new records](add-new-record.
 
 <!-- TAGS='role: dev', 'adopted' BEGIN -->
 <details class="md-tag-details"><summary class="md-tag-summary">Tags</summary>
-<p><a href="../../tags/#adopted" class="md-tag">adopted</a> <a href="../../tags/#role-dev" class="md-tag">role: dev</a></p></details>
+<p><a href="../../tags/#role-dev" class="md-tag">role: dev</a> <a href="../../tags/#adopted" class="md-tag">adopted</a></p></details>
 
 - [Standardize HTML img tag](adopted/standardize-html-img-tag.md)
 - [Hide button on Toolkit page](adopted/hide-button-on-toolkit-page.md)
@@ -25,9 +25,9 @@ See detailed instructions and templates for [adding new records](add-new-record.
 
 ### :red_square: Status: Not-implemented
 
-<!-- TAGS='not implemented', 'role: dev' BEGIN -->
+<!-- TAGS='role: dev', 'not implemented' BEGIN -->
 <details class="md-tag-details"><summary class="md-tag-summary">Tags</summary>
-<p><a href="../../tags/#not-implemented" class="md-tag">not implemented</a> <a href="../../tags/#role-dev" class="md-tag">role: dev</a></p></details>
+<p><a href="../../tags/#role-dev" class="md-tag">role: dev</a> <a href="../../tags/#not-implemented" class="md-tag">not implemented</a></p></details>
 
 - [Prevent liquid injection attacks in markdown](not-implemented/prevent-liquid-injection-attacks-in-markdown.md)
 - [Fix PR GitHub Actions bug with labels and instructions](not-implemented/fix-pr-github-actions-bug-with-labels-and-instructions.md)
