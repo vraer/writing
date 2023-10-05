@@ -1,5 +1,5 @@
 nav:
+
   - Home: index.md
-  - About: about-me.md
-  - Writing Samples: samples
-  - Contact: contact.md
+  - About: about.md
+  - Samples: samples

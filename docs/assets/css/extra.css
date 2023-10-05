@@ -172,12 +172,6 @@
   [dir="rtl"] .md-typeset .inline {
     float: right;
   }
-  [dir="ltr"] .md-typeset .inline {
-    margin-right: 0.8rem;
-  }
-  [dir="rtl"] .md-typeset .inline {
-    margin-left: 0.8rem;
-  }
   .md-typeset .inline {
     margin-bottom: 0.8rem;
     margin-top: 0;
@@ -185,15 +179,11 @@
   }
   [dir="ltr"] .md-typeset .inline.end {
     float: right;
-  }
-  [dir="rtl"] .md-typeset .inline.end {
-    float: left;
-  }
-  [dir="ltr"] .md-typeset .inline.end {
     margin-left: 0.8rem;
     margin-right: 0;
   }
   [dir="rtl"] .md-typeset .inline.end {
+    float: left;
     margin-left: 0;
     margin-right: 0.8rem;
   }
@@ -258,10 +248,7 @@
 
 .md-typeset img {
   border-radius: 8px;
-  max-width: 80%;
   max-height: 450px;
   margin: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
