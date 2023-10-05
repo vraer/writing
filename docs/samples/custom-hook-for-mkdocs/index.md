@@ -1,12 +1,12 @@
 ---
-title: Custom Hook for Page Link Queries by Tags
+title: Automate tag-based page links in MkDocs with Python
 ---
 
 ## Overview
 
 This document outlines a custom Python script I developed for MkDocs. The script dynamically generates lists of page links based on tags defined in Markdown files. This functionality is particularly useful for large documentation projects that require efficient navigation.
 
-!!! info "Check out the full python script on [GitHub](https://gist.github.com/vraer/d114b37932b855b66d6731c975342b0f)"
+!!! info "Check out the full python script on [GitHub](https://gist.github.com/vraer/d114b37932b855b66d6731c975342b0f)."
 
 ## Pre-Setup Requirements
 
@@ -55,6 +55,10 @@ In a Markdown file like `decision-records.md`, use:
 ```
 
 The script replaces this placeholder with links to decision records carrying these tags.
+
+## Example Output: [Decision Records](decision-records/index.md)
+
+For a real-world application of this script, check out the 'decision records' folder linked in the side navigation. It serves as an example of how this script can automate the listing of documents based on tags.
 
 ### Advantages
 
