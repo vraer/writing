@@ -32,7 +32,7 @@ theme:
     - navigation.footer
     - navigation.indexes
     #- navigation.instant
-    #- navigation.sections
+    - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
@@ -46,6 +46,8 @@ theme:
 repo_url: https://github.com/vraer/writing
 repo_name: vraer/writing
 edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; 2023 Vanessa Rodriguez
 
 extra:
   social:
