@@ -27,11 +27,13 @@ Before starting the environmental tests, perform an initial check of the DUT's f
 
 ## 3. Test Setup
 
-### Physical Setup of the DUT
+### Hardware setup
 
 Place the DUT in the center of the environmental chamber. Ensure that the DUT is positioned in such a way that it allows for even airflow around it. This will help maintain consistent temperature and humidity conditions around the DUT during the test.
 
 To ensure a uniform temperature distribution around the DUT, consider placing the DUT on a rack or stand made of a thermally non-conductive material like Teflon or plastic. This will prevent direct contact between the DUT and the metal surfaces of the chamber which could lead to uneven heating or cooling.
+
+![DUT with Teflon strips](dut-setup-with-teflon.png)
 
 ### Loading the Environmental Test Profile
 
