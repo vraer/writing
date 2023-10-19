@@ -56,19 +56,74 @@ Make sure you have the following:
 
 ## After the installation
 
-- Turn off the virtual machine
-- Remove the serial device from your virtual machine settings
-- Eject the Kali Linux ISO image
-- Turn on the virtual machine
-- Update your software packages
+1. Turn off the virtual machine.
+2. Remove the serial device from your virtual machine settings.
+3. Eject the Kali Linux ISO image.
+4. Turn on the virtual machine.
+5. Once you're logged in, open a terminal and run the following command to update the list of available packages and their versions:
 
-## Troubleshoot issues
+   ```bash
+   sudo apt update && sudo apt upgrade -y
+   ```
 
-- If the update command fails, run the following command:
+## Troubleshooting and fixes
 
-```bash
-echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" > /etc/apt/sources.list
-```
+### Resolve update command failures
 
-- Instead of upgrading the distribution in the virtual machine, do a clean installation.
-- To add more features, install guest additions by running `apt install qb-additions`.
+You might run into update command failures after installing Kali Linux. Often, the issue arises from outdated or incorrect repository links in your sources list. To fix this:
+
+1. Open the terminal.
+2. Run the following command to update your sources list:
+
+   ```bash
+   echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" > /etc/apt/sources.list
+   ```
+
+This command replaces your existing sources list with a verified repository.
+
+### Choose a clean installation when necessary
+
+If you experience system inconsistencies that are hard to pinpoint, a clean installation might be your best course of action. This can resolve issues ranging from software conflicts to corrupted files.
+
+To perform a clean installation:
+
+1. Back up any important data.
+2. Open the UTM control panel.
+3. Delete the existing virtual machine.
+4. Follow the initial setup instructions to create a new virtual machine.
+
+### Enhance your virtual machine with Guest Additions
+
+After setting up Kali Linux and resolving any initial issues, consider enhancing your system with Guest Additions. This add-on improves performance and adds new features.
+
+To install Guest Additions:
+
+1. Open the terminal in your Kali Linux virtual machine.
+2. Run the following command:
+
+   ```bash
+   apt install qb-additions
+   ```
+
+This installs the Guest Additions package, enabling functionalities like seamless mouse integration, improved display resolutions, and more efficient file sharing between the host and the virtual machine.
+
+## Further resources and learning paths
+
+### Exploring advanced tools in Kali Linux
+
+After setting up Kali Linux on your Apple Silicon Mac, explore a variety of cybersecurity tools available for tasks like network analysis, penetration testing, and digital forensics. Here are some tools worth checking out:
+
+- **[Wireshark](https://www.wireshark.org/)**: Analyze network protocols.
+- **[Metasploit](https://www.metasploit.com/)**: Develop, test, and execute exploit code.
+- **[Nmap](https://nmap.org/)**: Scan networks and inventory devices.
+- **[Hashcat](https://hashcat.net/hashcat/)** and **[John the Ripper](https://www.openwall.com/john/)**: Crack passwords.
+- **[Kismet](https://www.kismetwireless.net/)**: Scan wireless networks.
+- **[Zed Attack Proxy (ZAP)](https://www.zaproxy.org/)**: Scan web apps.
+- **[Aircrack-ng](https://www.aircrack-ng.org/)**: Assess WiFi network security.
+- **[Burp Suite](https://portswigger.net/burp)**: Test web application security.
+- **[Hydra](https://github.com/vanhauser-thc/thc-hydra)**: Perform password cracking and brute force attacks.
+- **[SQLmap](http://sqlmap.org/)**: Automate the detection and exploitation of SQL injection flaws.
+- **[Snort](https://www.snort.org/)**: Act as a network intrusion prevention system.
+- **[Nessus](https://www.tenable.com/products/nessus)**: Conduct vulnerability scanning.
+  
+These tools can enhance your Kali Linux experience, helping you tackle various cybersecurity challenges.
