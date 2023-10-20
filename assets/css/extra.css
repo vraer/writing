@@ -55,7 +55,7 @@
   line-height: 1.4;
   color: var(--md-text-font);
   margin-top: 1.5rem;
-  border-bottom: 0.01rem solid rgba(148, 148, 148, 0.218);
+  border-bottom: 0.02rem solid rgba(148, 148, 148, 0.167);
   padding-bottom: 0.01rem;
   margin-bottom: 0.9rem;
 }
@@ -251,4 +251,16 @@
   max-height: 450px;
   margin: auto;
   display: block;
+}
+
+.md-nav--secondary {
+  border-left: 0.01rem solid rgba(148, 148, 148, 0.167);
+}
+
+.md-nav__item .md-nav__link--active {
+  font-weight: bold;
+}
+
+.md-nav {
+  font-size: 0.6rem;
 }
